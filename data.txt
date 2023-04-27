@@ -1,0 +1,5 @@
+<GiHamburgerMenu/> - for hambuger 
+<RxDividerVertical/> - for divider
+<FaSearch/> - for search icon
+For cart bag, we have used the UI svg
+ 
