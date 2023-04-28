@@ -47,21 +47,6 @@ In the project directory, you can run:
 Runs the app in development mode with hot reloading enabled.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-### `yarn start`
-
-Runs the app in production mode after building the app using `yarn build`.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ## Learn More
 
 You can learn more about ReactJS and TypeScript in the following links:
