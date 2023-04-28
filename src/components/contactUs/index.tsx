@@ -8,9 +8,9 @@ import { RiCopyrightLine } from "react-icons/ri";
 
 const ContactUs = () => {
   return (
-    <div className="flex flex-col justify-start bg-customBlack text-white ">
+    <div className="flex flex-col justify-start bg-customBlack text-white">
       <div
-        className={`flex flex-row items-end justify-between  px-8 sm:px-20 py-10 `}
+        className={`flex flex-row items-end lg:items-start justify-between px-8 sm:px-20 py-10`}
       >
         <div className={`flex flex-col justify-start gap-3`}>
           <h1> CONTACT US </h1>
@@ -27,12 +27,46 @@ const ContactUs = () => {
             <label className="text-xs"> +91 123456789</label>
           </div>
         </div>
-        <div className={`${layout.flex.row.center} gap-3`}>
+
+        {/* Information start */}
+        <div
+          className={`hidden lg:flex lg:flex-col lg:justify-start lg:gap-3 lg:w-1/3`}
+        >
+          <h1> INFORMATION </h1>
+
+          <ul className={`${layout.flex.col.spaceBetween} gap-3`}>
+            <li className="text-xs">About</li>
+            <li className="text-xs">Delivery</li>
+            <li className="text-xs">information</li>
+          </ul>
+        </div>
+        {/* Information end */}
+
+        {/* about us start */}
+        <div
+          className={`hidden lg:flex lg:flex-col lg:justify-start lg:gap-3 lg:w-1/3 `}
+        >
+          <h1> ABOUT US </h1>
+          <p className="w-full text-xs">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            aliquet lacinia nulla ut laoreet. Quisque ultricies et tortor nec
+            laoreet.
+          </p>
+          <div className={`${layout.flex.row.left} gap-3`}>
+            <FiFacebook />
+            <CgInstagram />
+            <SlSocialSkype />
+            <FiYoutube />
+          </div>
+        </div>
+
+        <div className={`${layout.flex.row.center} gap-3 lg:hidden`}>
           <FiFacebook />
           <CgInstagram />
           <SlSocialSkype />
           <FiYoutube />
         </div>
+        {/* about us end */}
       </div>
       <hr className="mx-8" />
       <div className={`${layout.flex.row.center} gap-3`}>

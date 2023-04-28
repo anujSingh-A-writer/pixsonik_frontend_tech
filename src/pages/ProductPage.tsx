@@ -16,7 +16,7 @@ const ProductPage = () => {
         <div className={`${layout.flex.row.left} gap-3`}>
           <CgMenuGridO />
           <TfiMenuAlt className="text-gray-300" />
-          <p>Showing 1 to 9 of 37 items</p>
+          <p className="text-sm">Showing 1 to 9 of 37 items</p>
         </div>
         <div className={`${layout.flex.row.left} gap-5 pr-5`}>
           <label className="text-[#6C6F7A] font-bold">Sort by</label>
