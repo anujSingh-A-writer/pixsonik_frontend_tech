@@ -10,7 +10,7 @@ const Services: React.FC<ServicesProps> = (props) => {
       {data.map((datum) => (
         <div
           key={datum.id}
-          className={`${layout.flex.col.center} w-full md:w-1/3 my-5 text-white text-center gap-2`}
+          className={`${layout.flex.col.center} w-full md:w-1/3 py-5 text-white text-center gap-2 border-b md:border border-gray-400`}
         >
           <h2 className="text-sm">{datum.title}</h2>
           <p className="text-xs w-[70%]">{datum.description}</p>

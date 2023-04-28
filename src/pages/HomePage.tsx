@@ -5,6 +5,7 @@ import carPicture from "../assests/images/carBanner.png";
 import { CLIENT_LIST } from "../constants/clients";
 import Clients from "../components/client";
 import ProductSection from "../components/productSection";
+import ContactUs from "../components/contactUs";
 
 const HomePage = () => {
   return (
@@ -25,6 +26,7 @@ const HomePage = () => {
         subTitle="Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum."
         template="HORIZONTAL"
       />
+      <ContactUs />
     </div>
   );
 };
