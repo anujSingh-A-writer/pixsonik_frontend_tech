@@ -1,7 +1,7 @@
 import { layout } from "../../styles/style";
-import { ServiceDetails } from "./types";
+import { ServicesProps } from "./types";
 
-const Services: React.FC<ServiceDetails> = (props) => {
+const Services: React.FC<ServicesProps> = (props) => {
   const { data } = props;
   return (
     <div className={`${layout.flex.col.center} bg-darkbg `}>
