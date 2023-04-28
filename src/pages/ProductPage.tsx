@@ -4,11 +4,25 @@ import Product from "../components/product";
 import ProductSection from "../components/productSection";
 import { PRODUCT_LIST } from "../constants/products";
 import { layout } from "../styles/style";
+import { CgMenuGridO } from "react-icons/cg";
+import { TfiMenuAlt } from "react-icons/tfi";
 
 const ProductPage = () => {
   return (
     <div className="">
-      <div className="h-[60px] drop-shadow-lg"></div>
+      <div
+        className={`${layout.flex.row.spaceBetween} h-[60px] px-5 shadow-lg mb-5`}
+      >
+        <div className={`${layout.flex.row.left} gap-3`}>
+          <CgMenuGridO />
+          <TfiMenuAlt className="text-gray-300" />
+          <p>Showing 1 to 9 of 37 items</p>
+        </div>
+        <div className={`${layout.flex.row.left} gap-5 pr-5`}>
+          <label className="text-[#6C6F7A] font-bold">Sort by</label>
+          <label className="text-[#6C6F7A] font-bold">Filter</label>
+        </div>
+      </div>
       <div>
         <div className={`flex flex-wrap sm:px-10 items-center justify-center`}>
           {PRODUCT_LIST.map((product, index) => (
@@ -35,7 +49,7 @@ const ProductPage = () => {
               LOAD MORE PRODUCTS
             </button>
             <div className={`${layout.flex.row.right} w-full`}>
-              <button className="p-5 rounded-full bg-red">
+              <button className="p-5 rounded-full bg-red shadow-2xl shadow-red">
                 <MdKeyboardArrowUp className="text-white" />
               </button>
             </div>
