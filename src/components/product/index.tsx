@@ -16,9 +16,7 @@ const Product: React.FC<Partial<ProductProps>> = (props) => {
   const starCount = Array.from({ length: ratings });
 
   let content = (
-    <div
-      className={`flex flex-col items-start w-full rounded-lg gap-4 border`}
-    >
+    <div className={`flex flex-col items-start w-full rounded-lg gap-4 border`}>
       <div
         className={`${layout.flex.row.center} rounded-t-lg bg-palegray w-full`}
       >
@@ -36,7 +34,13 @@ const Product: React.FC<Partial<ProductProps>> = (props) => {
         <h6 className="w-full font-bold text-left text-sm py-4 text-ashgray border-b border-gray-400">
           {name}
         </h6>
-        <label className="text-red font-bold pt-4">{`₹ ${price}/-`}</label>
+        <div className={`${layout.flex.row.left} pt-4 gap-3`}>
+          <span className="w-fit px-3 font-semibold h-[30px] bg-yellow-300">
+            {`-${discountInPercent}%`}
+          </span>
+          <label className="text-red font-bold ">{`₹ ${price}/-`}</label>
+          <label className="text-lightgray">{`₹ ${price}/-`}</label>
+        </div>
       </div>
       <div className={`${layout.flex.row.center} w-full`}>
         <div
