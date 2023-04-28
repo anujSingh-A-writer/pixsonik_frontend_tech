@@ -10,14 +10,14 @@ const ProductSection: React.FC<ProductSectionProps> = (props) => {
     <div className={`${layout.flex.col.center} ${className} text-center`}>
       <div className={`${layout.flex.row.spaceEvenly} gap-3`}>
         <AiFillStar className="text-red" />
-        <h1 className="font-bold">{title}</h1>
+        <h1 className="font-bold ">{title}</h1>
         <AiFillStar className="text-red" />
       </div>
-      <p className="text-xs mt-6 mb-10">{subTitle}</p>
-      <div className={`flex flex-wrap sm:px-10 items-center justify-center`}>
+      <p className="text-xs mt-6 mb-10 text-ashgray">{subTitle}</p>
+      <div className={`flex flex-wrap sm:px-10 items-center justify-center `}>
         {PRODUCT_LIST.map((product, index) => (
           <div
-            className={`${layout.flex.col.center} w-2/3 sm:w-1/2 lg:w-1/3 xl:w-1/4 p-2`}
+            className={`${layout.flex.col.center} w-2/3 sm:w-1/2 lg:w-1/3 xl:w-1/4 p-2 `}
           >
             <div
               className={`${

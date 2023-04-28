@@ -33,7 +33,7 @@ const Product: React.FC<Partial<ProductProps>> = (props) => {
             reviewCount > 0 ? reviewCount : "No"
           } reviews`}</p>
         </div>
-        <h6 className="w-full font-bold text-left text-sm py-4 border-b border-gray-400">
+        <h6 className="w-full font-bold text-left text-sm py-4 text-ashgray border-b border-gray-400">
           {name}
         </h6>
         <label className="text-red font-bold pt-4">{`₹ ${price}/-`}</label>
@@ -51,7 +51,7 @@ const Product: React.FC<Partial<ProductProps>> = (props) => {
 
   if (template === "HORIZONTAL") {
     content = (
-      <div className={`flex flex-row w-full `}>
+      <div className={`flex flex-row w-full pb-10`}>
         <div
           className={`${layout.flex.row.center} rounded-t-lg bg-palegray w-full`}
         >
@@ -62,11 +62,11 @@ const Product: React.FC<Partial<ProductProps>> = (props) => {
             {starCount.map(() => (
               <AiFillStar className="text-yellow-400" />
             ))}
-            <p className="text-xs px-2">{`${
+            <p className="text-xs px-2 text-ashgray">{`${
               reviewCount > 0 ? reviewCount : "No"
             } reviews`}</p>
           </div>
-          <h6 className="w-full font-bold text-left text-sm py-4 border-b border-gray-400">
+          <h6 className="w-full font-bold text-left text-sm py-4 text-ashgray border-b border-gray-400">
             {name}
           </h6>
           <label className="text-red font-bold pt-4">{`₹ ${price}/-`}</label>

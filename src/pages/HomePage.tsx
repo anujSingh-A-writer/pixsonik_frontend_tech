@@ -16,11 +16,11 @@ const HomePage = () => {
         title="OUR PRODUCTS"
         subTitle="Claritas est etiam processus dynamicus, qui sequitur mutationem
         consuetudium lectorum."
-        className="my-10"
+        className="my-20"
         template="VERTICAL"
       />
       <ProductSection
-        className="bg-black text-white"
+        className="bg-black text-white py-20"
         title="BEST SELLER PRODUCTS"
         subTitle="Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum."
         template="HORIZONTAL"

@@ -9,6 +9,7 @@ module.exports = {
         drakgray: "#383838",
         lightgray: "#B4B2B2",
         palegray: "#EEEEEE",
+        ashgray: "#5A6069",
       },
     },
   },
