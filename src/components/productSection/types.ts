@@ -1,3 +1,6 @@
 export type ProductSectionProps = {
-  className: string;
+  className?: string;
+  title: string;
+  subTitle: string;
+  template: "VERTICAL" | "HORIZONTAL";
 };

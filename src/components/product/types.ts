@@ -5,4 +5,5 @@ export type ProductProps = {
   ratings: number;
   reviewCount: number;
   discountInPercent: number;
+  template?: "VERTICAL" | "HORIZONTAL";
 };

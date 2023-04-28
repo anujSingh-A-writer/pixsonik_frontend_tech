@@ -5,24 +5,25 @@ import { ProductSectionProps } from "./types";
 import { AiFillStar } from "react-icons/ai";
 
 const ProductSection: React.FC<ProductSectionProps> = (props) => {
-  const { className } = props;
+  const { className, title, subTitle, template } = props;
   return (
     <div className={`${layout.flex.col.center} ${className} text-center`}>
       <div className={`${layout.flex.row.spaceEvenly} gap-3`}>
         <AiFillStar className="text-red" />
-        <h1 className="font-bold">OUR PRODUCTS</h1>
+        <h1 className="font-bold">{title}</h1>
         <AiFillStar className="text-red" />
       </div>
-      <p className="text-xs mt-6 mb-10">
-        Claritas est etiam processus dynamicus, qui sequitur mutationem
-        consuetudium lectorum.
-      </p>
+      <p className="text-xs mt-6 mb-10">{subTitle}</p>
       <div className={`flex flex-wrap sm:px-10 items-center justify-center`}>
         {PRODUCT_LIST.map((product, index) => (
           <div
-            className={`${layout.flex.col.center} w-2/3 sm:w-1/2 lg:w-1/4 p-2`}
+            className={`${layout.flex.col.center} w-2/3 sm:w-1/2 lg:w-1/3 xl:w-1/4 p-2`}
           >
-            <div className={`w-full sm:w-2/3 lg:w-full`}>
+            <div
+              className={`${
+                template === "VERTICAL" ? "w-full sm:w-5/6 lg:w-full" : ""
+              }`}
+            >
               <Product
                 key={index}
                 name={product.name}
@@ -31,6 +32,7 @@ const ProductSection: React.FC<ProductSectionProps> = (props) => {
                 ratings={product.ratings}
                 reviewCount={product.reviewCount}
                 discountInPercent={product.discountInPercent}
+                template={template}
               />
             </div>
           </div>

@@ -12,7 +12,19 @@ const HomePage = () => {
       <Banner image={carPicture} />
       <Services data={SERVICE_LIST} />
       <Clients data={CLIENT_LIST} />
-      <ProductSection className="my-10" />
+      <ProductSection
+        title="OUR PRODUCTS"
+        subTitle="Claritas est etiam processus dynamicus, qui sequitur mutationem
+        consuetudium lectorum."
+        className="my-10"
+        template="VERTICAL"
+      />
+      <ProductSection
+        className="bg-black text-white"
+        title="BEST SELLER PRODUCTS"
+        subTitle="Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum."
+        template="HORIZONTAL"
+      />
     </div>
   );
 };
