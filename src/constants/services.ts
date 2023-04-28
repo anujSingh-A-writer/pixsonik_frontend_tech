@@ -1,4 +1,4 @@
-export const serviceList = [
+export const SERVICE_LIST = [
   {
     id: 1,
     title: "Money guarantee",
