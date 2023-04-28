@@ -4,6 +4,7 @@ import { SERVICE_LIST } from "../constants/services";
 import carPicture from "../assests/images/carBanner.png";
 import { CLIENT_LIST } from "../constants/clients";
 import Clients from "../components/client";
+import ProductSection from "../components/productSection";
 
 const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
       <Banner image={carPicture} />
       <Services data={SERVICE_LIST} />
       <Clients data={CLIENT_LIST} />
+      <ProductSection className="my-10" />
     </div>
   );
 };

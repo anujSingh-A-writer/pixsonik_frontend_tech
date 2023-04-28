@@ -28,7 +28,7 @@ const Banner: React.FC<BannerProps> = (props) => {
                   VIEW COLLECTION
                 </label>
                 <span
-                  className={`${layout.flex.row.center} h-8 w-8 bg-drakgrey rounded-full`}
+                  className={`${layout.flex.row.center} h-8 w-8 bg-drakgray rounded-full`}
                 >
                   <FaAngleRight className="text-white" />
                 </span>
