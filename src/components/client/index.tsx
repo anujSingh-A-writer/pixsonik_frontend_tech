@@ -4,9 +4,11 @@ import { ClientsProps } from "./types";
 const Clients: React.FC<ClientsProps> = (props) => {
   const { data } = props;
   return (
-    <div className={`${layout.flex.col.center} bg-darkbg `}>
+    <div
+      className={`w-full flex flex-wrap items-center justify-center bg-darkbg`}
+    >
       {data.map((datum) => (
-        <div className="relative w-full">
+        <div className={`w-full md:w-1/3 relative`}>
           <img
             className="w-full filter brightness-50 contrast-100"
             src={datum.backgroundImage}

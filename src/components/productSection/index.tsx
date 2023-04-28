@@ -14,7 +14,7 @@ const ProductSection: React.FC<ProductSectionProps> = (props) => {
         <AiFillStar className="text-red" />
       </div>
       <p className="text-xs mt-6 mb-10 text-ashgray">{subTitle}</p>
-      <div className={`flex flex-wrap sm:px-10 items-center justify-center `}>
+      <div className={`flex flex-wrap sm:px-10 items-center justify-center`}>
         {PRODUCT_LIST.map((product, index) => (
           <div
             className={`${layout.flex.col.center} w-2/3 sm:w-1/2 lg:w-1/3 xl:w-1/4 p-2 `}
