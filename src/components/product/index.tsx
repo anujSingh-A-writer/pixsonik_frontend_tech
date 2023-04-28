@@ -17,7 +17,7 @@ const Product: React.FC<Partial<ProductProps>> = (props) => {
 
   let content = (
     <div
-      className={`flex flex-col items-start w-full rounded-lg gap-4 border `}
+      className={`flex flex-col items-start w-full rounded-lg gap-4 border`}
     >
       <div
         className={`${layout.flex.row.center} rounded-t-lg bg-palegray w-full`}
