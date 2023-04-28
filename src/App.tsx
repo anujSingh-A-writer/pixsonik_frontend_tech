@@ -5,9 +5,9 @@ import ProductPage from "./pages/ProductPage";
 function App() {
   return (
     <Layout>
-      {/* <HomePage></HomePage> */}
+      <HomePage></HomePage>
       {/*Comment-out the above line and Uncomment the line below to see the product page */}
-      <ProductPage></ProductPage>
+      {/* <ProductPage></ProductPage> */}
     </Layout>
   );
 }

@@ -44,8 +44,8 @@ const ProductPage = () => {
             </div>
           ))}
 
-          <div className={`${layout.flex.col.center} w-full mb-5 mt-10`}>
-            <button className="w-[200px] bg-black text-white text-xs font-semibold p-3 rounded-full">
+          <div className={`${layout.flex.col.center} w-full mb-5 mt-10 px-5`}>
+            <button className="bg-black text-white text-xs font-semibold py-3 px-5 mb-5 sm:mb-0 rounded-full">
               LOAD MORE PRODUCTS
             </button>
             <div className={`${layout.flex.row.right} w-full`}>
