@@ -19,7 +19,7 @@ This is a starter ReactJS project with TypeScript and Tailwind CSS. Follow the i
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/anujSingh-A-writer/pixsonik_frontend_tech.git
    ```
 
 2. Install dependencies
