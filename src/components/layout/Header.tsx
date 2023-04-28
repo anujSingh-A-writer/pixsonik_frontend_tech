@@ -3,30 +3,9 @@ import { RxDividerVertical } from "react-icons/rx";
 import { FaSearch } from "react-icons/fa";
 import CartBag from "../../assests/svgs/CartBag";
 import { layout } from "../../styles/style";
+import { menuItems } from "../../constants/sideNaviagtion";
 
 const Header = () => {
-  const menuItems = [
-    {
-      name: "Home",
-      path: "/",
-    },
-    {
-      name: "Shop",
-      path: "/shop",
-    },
-    {
-      name: "Featured",
-      path: "/featured",
-    },
-    {
-      name: "Layouts",
-      path: "/layout",
-    },
-    {
-      name: "Page",
-      path: "/page",
-    },
-  ];
   return (
     <header className="h-[50px] bg-darkbg">
       <div
@@ -38,6 +17,7 @@ const Header = () => {
           >
             {menuItems.map((eachItem) => (
               <li
+                key={eachItem.path}
                 className={`${layout.flex.row.center}hover:bg-red h-full px-5 mx-2`}
               >
                 <a>{eachItem.name}</a>

@@ -4,7 +4,6 @@ import { layout } from "../../styles/style";
 
 const Banner = () => {
   return (
-    <div className="w-full h-screen flex content-start">
       <div className="w-full h-2/3">
         <div className="relative w-full h-full">
           <img
@@ -38,7 +37,6 @@ const Banner = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
