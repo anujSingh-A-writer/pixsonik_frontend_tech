@@ -9,7 +9,7 @@ const Layout: React.FC<{ children: JSX.Element }> = (props) => {
       <nav />
       <div className={`${layout.flex.col.spaceBetween}`}>
         <Header />
-        <main className=" h-full">{children}</main>
+        <main className="h-full">{children}</main>
         <footer></footer>
       </div>
     </div>

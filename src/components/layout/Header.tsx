@@ -8,18 +8,23 @@ const Header = () => {
   const menuItems = [
     {
       name: "Home",
+      path: "/",
     },
     {
       name: "Shop",
+      path: "/shop",
     },
     {
       name: "Featured",
+      path: "/featured",
     },
     {
       name: "Layouts",
+      path: "/layout",
     },
     {
       name: "Page",
+      path: "/page",
     },
   ];
   return (
@@ -32,15 +37,17 @@ const Header = () => {
             className={`hidden lg:flex ${layout.flex.row.left} text-white h-full cursor-pointer`}
           >
             {menuItems.map((eachItem) => (
-              <li className={`${layout.flex.row.center}hover:bg-red h-full px-5 mx-2`}>
-                {eachItem.name}
+              <li
+                className={`${layout.flex.row.center}hover:bg-red h-full px-5 mx-2`}
+              >
+                <a>{eachItem.name}</a>
               </li>
             ))}
           </ul>
           {/* Menu icon */}
           <GiHamburgerMenu className="text-white text-3xl lg:hidden" />
         </div>
-        <div className={`${layout.flex.row.left} gap-5`}>
+        <div className={`${layout.flex.row.left} gap-2 lg:gap-5`}>
           {/* Menu icon */}
           <GiHamburgerMenu className="text-white text-3xl hidden lg:block" />
 
